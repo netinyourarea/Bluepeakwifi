@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://internetverse.com/sitemap.xml
