@@ -25,7 +25,7 @@ const COLUMNS: { title: string; links: { label: string; to: string }[] }[] = [
 ];
 
 export const DISCLAIMER_TEXT =
-  "Trunet Verse operates as an independent third-party service provider offering assistance with broadband and cable connection requests. We are not affiliated with, endorsed by, or representing any internet service provider, cable operator, or telecommunications company. All brand names, logos and trademarks referenced remain the property of their respective owners.";
+  "Bluepeak Wifi operates as an independent third-party service provider offering assistance with broadband and cable connection requests. We are not affiliated with, endorsed by, or representing any internet service provider, cable operator, or telecommunications company. All brand names, logos and trademarks referenced remain the property of their respective owners.";
 
 export function Footer() {
   return (
@@ -43,7 +43,7 @@ export function Footer() {
               <ul className="mt-6 space-y-3 text-sm text-cream/75">
                 <li className="flex items-start gap-3">
                   <Phone className="mt-0.5 size-4 shrink-0 text-aqua" />
-                  <span>xxx-xxx-xxxx</span>
+                  <a href="tel:+18775794692" className="hover:text-aqua">(877) 579-4692</a>
                 </li>
               </ul>
             </div>
@@ -76,7 +76,7 @@ export function Footer() {
           </div>
 
           <div className="mt-8 flex flex-col gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
-            <p>© {new Date().getFullYear()} Trunet Verse. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Bluepeak Wifi. All rights reserved.</p>
             <p>Independent third-party connection assistance service.</p>
           </div>
         </div>

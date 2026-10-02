@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://internetverse.com/sitemap.xml
+Sitemap: https://bluepeakwifi.com/sitemap.xml

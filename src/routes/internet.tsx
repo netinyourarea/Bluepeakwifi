@@ -6,7 +6,7 @@ import { Reveal, Eyebrow } from "@/components/site/primitives";
 import { InternetPlans } from "@/components/site/home-sections";
 import { IMG } from "@/lib/images";
 
-const title = "Fiber & Cable Internet Plans | Trunet Verse";
+const title = "Fiber & Cable Internet Plans | Bluepeak Wifi";
 const description =
   "Compare 300 Mbps to 2 Gbps internet plans, router and mesh Wi-Fi options, and find the fastest network wired to your address.";
 

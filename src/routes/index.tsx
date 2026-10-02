@@ -16,7 +16,7 @@ import {
   WhyUs,
 } from "@/components/site/home-sections";
 
-const title = "Trunet Verse — Fiber Internet & Cable TV Plans";
+const title = "Bluepeak Wifi — Fiber Internet & Cable TV Plans";
 const description =
   "Compare fiber internet speeds and cable TV channel packs available at your address, then let a specialist handle the order and installation.";
 

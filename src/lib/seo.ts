@@ -1,5 +1,5 @@
-export const SITE_URL = "https://trunetverse.com";
-export const SITE_NAME = "Trunet Verse";
+export const SITE_URL = "https://bluepeakwifi.com";
+export const SITE_NAME = "Bluepeak Wifi";
 
 type HeadOptions = {
   title: string;

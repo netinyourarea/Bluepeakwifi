@@ -2,9 +2,9 @@ import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Prose } from "@/components/site/page-shell";
 
-const title = "Privacy Policy | Trunet Verse";
+const title = "Privacy Policy | Bluepeak Wifi";
 const description =
-  "How Trunet Verse collects, uses and protects personal information submitted through coverage checks and connection requests.";
+  "How Bluepeak Wifi collects, uses and protects personal information submitted through coverage checks and connection requests.";
 
 export const Route = createFileRoute("/privacy-policy")({
   head: () => pageHead({ title, description, path: "/privacy-policy", breadcrumb: [{ name: "Privacy Policy", path: "/privacy-policy" }] }),

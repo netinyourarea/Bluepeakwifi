@@ -2,9 +2,9 @@ import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Prose, DisclaimerBlock } from "@/components/site/page-shell";
 
-const title = "Terms & Conditions | Trunet Verse";
+const title = "Terms & Conditions | Bluepeak Wifi";
 const description =
-  "The terms governing use of Trunet Verse's independent broadband and cable connection assistance service.";
+  "The terms governing use of Bluepeak Wifi's independent broadband and cable connection assistance service.";
 
 export const Route = createFileRoute("/terms")({
   head: () => pageHead({ title, description, path: "/terms", breadcrumb: [{ name: "Terms & Conditions", path: "/terms" }] }),

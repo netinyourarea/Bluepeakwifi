@@ -802,7 +802,7 @@ export function Testimonials() {
               <div className="mt-8 flex items-center gap-4 border-t border-cream/15 pt-6">
                 <img
                   src={q.img}
-                  alt={`${q.name}, Trunet Verse customer`}
+                  alt={`${q.name}, Bluepeak Wifi customer`}
                   loading="lazy"
                   className="size-14 rounded-full object-cover ring-2 ring-aqua/50"
                 />

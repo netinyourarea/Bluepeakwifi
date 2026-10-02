@@ -6,7 +6,7 @@ import { Reveal, Eyebrow } from "@/components/site/primitives";
 import { TvPackages } from "@/components/site/home-sections";
 import { IMG } from "@/lib/images";
 
-const title = "Cable TV Packages & Channel Packs | Trunet Verse";
+const title = "Cable TV Packages & Channel Packs | Bluepeak Wifi";
 const description =
   "Cable TV packages from 85 to 260+ channels with cloud DVR, 4K feeds, sports packs and multi-room boxes — bundled with your internet line.";
 

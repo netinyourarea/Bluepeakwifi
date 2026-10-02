@@ -2,9 +2,9 @@ import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, Prose, DisclaimerBlock } from "@/components/site/page-shell";
 
-const title = "Refund Policy | Trunet Verse";
+const title = "Refund Policy | Bluepeak Wifi";
 const description =
-  "How refunds and cancellations work for assistance services provided by Trunet Verse.";
+  "How refunds and cancellations work for assistance services provided by Bluepeak Wifi.";
 
 export const Route = createFileRoute("/refund-policy")({
   head: () => pageHead({ title, description, path: "/refund-policy", breadcrumb: [{ name: "Refund Policy", path: "/refund-policy" }] }),

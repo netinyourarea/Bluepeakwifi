@@ -1,16 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Trunet Verse logo">
-  <defs>
-    <linearGradient id="tv-logo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0F3D3E" />
-      <stop offset="100%" stop-color="#63D8B4" />
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Bluepeak Wifi logo">
   <rect width="48" height="48" rx="12" fill="#1A1C1E" />
-  <!-- orbiting rings -->
-  <ellipse cx="24" cy="24" rx="17" ry="7" fill="none" stroke="url(#tv-logo)" stroke-width="2" transform="rotate(-25 24 24)" />
-  <ellipse cx="24" cy="24" rx="17" ry="7" fill="none" stroke="url(#tv-logo)" stroke-width="2" opacity="0.5" transform="rotate(35 24 24)" />
-  <!-- "T" letterform -->
-  <line x1="15" y1="15" x2="33" y2="15" stroke="#63D8B4" stroke-width="4" stroke-linecap="square" />
-  <line x1="24" y1="15" x2="24" y2="33" stroke="#63D8B4" stroke-width="4" stroke-linecap="square" />
-  <circle cx="24" cy="24" r="2.4" fill="#63D8B4" />
+  <path d="M13 17a15 15 0 0 1 22 0" fill="none" stroke="#63D8B4" stroke-width="3" stroke-linecap="round" opacity="0.5" />
+  <path d="M17.5 21.5a9 9 0 0 1 13 0" fill="none" stroke="#63D8B4" stroke-width="3" stroke-linecap="round" />
+  <path d="M6 40 20 22l6 7 4-5 12 16Z" fill="#63D8B4" />
+  <circle cx="24" cy="12.5" r="2.6" fill="#63D8B4" />
 </svg>

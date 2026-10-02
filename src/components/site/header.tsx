@@ -12,60 +12,13 @@ export const NAV = [
 
 export function LogoMark({ className }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 48 48"
-      role="img"
-      aria-label="Trunet Verse logo"
-      className={className}
-    >
-      <defs>
-        <linearGradient id="tv-logo" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="currentColor" />
-          <stop offset="100%" stopColor="currentColor" stopOpacity="0.55" />
-        </linearGradient>
-      </defs>
-      {/* orbiting "verse" rings */}
-      <ellipse
-        cx="24"
-        cy="24"
-        rx="21"
-        ry="9"
-        fill="none"
-        stroke="url(#tv-logo)"
-        strokeWidth="2"
-        transform="rotate(-25 24 24)"
-      />
-      <ellipse
-        cx="24"
-        cy="24"
-        rx="21"
-        ry="9"
-        fill="none"
-        stroke="url(#tv-logo)"
-        strokeWidth="2"
-        opacity="0.5"
-        transform="rotate(35 24 24)"
-      />
-      {/* "T" letterform */}
-      <line
-        x1="14"
-        y1="15"
-        x2="34"
-        y2="15"
-        stroke="currentColor"
-        strokeWidth="4"
-        strokeLinecap="square"
-      />
-      <line
-        x1="24"
-        y1="15"
-        x2="24"
-        y2="33"
-        stroke="currentColor"
-        strokeWidth="4"
-        strokeLinecap="square"
-      />
-      <circle cx="24" cy="24" r="2.6" fill="currentColor" />
+    <svg viewBox="0 0 48 48" role="img" aria-label="Bluepeak Wifi logo" className={className}>
+      {/* wifi arcs radiating above the peak */}
+      <path d="M13 17a15 15 0 0 1 22 0" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" opacity="0.5" />
+      <path d="M17.5 21.5a9 9 0 0 1 13 0" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
+      {/* mountain peak */}
+      <path d="M6 40 20 22l6 7 4-5 12 16Z" fill="currentColor" />
+      <circle cx="24" cy="12.5" r="2.6" fill="currentColor" />
     </svg>
   );
 }
@@ -82,8 +35,8 @@ export function Logo({ tone = "dark" }: { tone?: "dark" | "light" }) {
           tone === "light" ? "text-cream" : "text-foreground",
         )}
       >
-        Trunet
-        <span className={tone === "light" ? "text-aqua" : "text-primary"}>Verse</span>
+        Bluepeak
+        <span className={tone === "light" ? "text-aqua" : "text-primary"}>Wifi</span>
         <span className="text-coral">.</span>
       </span>
     </Link>
@@ -128,7 +81,9 @@ export function Header() {
 
           <div className="flex items-center gap-2">
             <span className="hidden items-center gap-2 px-3 py-2 text-sm font-semibold text-foreground/80 xl:flex">
-              <Phone className="size-4 text-primary" /> xxx-xxx-xxxx
+              <a href="tel:+18775794692" className="inline-flex items-center gap-2 hover:text-primary">
+                <Phone className="size-4 text-primary" /> (877) 579-4692
+              </a>
             </span>
             <Link
               to="/contact"

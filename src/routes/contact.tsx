@@ -7,7 +7,7 @@ import { DisclaimerBlock } from "@/components/site/page-shell";
 import { Reveal, Eyebrow } from "@/components/site/primitives";
 import { IMG } from "@/lib/images";
 
-const title = "Contact Our Connectivity Specialists | Trunet Verse";
+const title = "Contact Our Connectivity Specialists | Bluepeak Wifi";
 const description =
   "Talk to an independent connectivity specialist about broadband and cable connection requests in your area.";
 
@@ -41,7 +41,7 @@ function ContactPage() {
             <ul className="space-y-4">
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <Phone className="size-5 shrink-0 text-primary" />
-                <span className="min-w-0 truncate text-sm font-bold">xxx-xxx-xxxx</span>
+                <a href="tel:+18775794692" className="min-w-0 truncate text-sm font-bold hover:text-primary">(877) 579-4692</a>
               </li>
             </ul>
             <DisclaimerBlock />

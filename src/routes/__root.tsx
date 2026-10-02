@@ -72,14 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Trunet Verse — Broadband & Cable Connection Assistance" },
+      { title: "Bluepeak Wifi — Broadband & Cable Connection Assistance" },
       {
         name: "description",
         content:
           "Explore broadband and cable connectivity options available in your area and request a connection with expert guidance.",
       },
-      { name: "author", content: "Trunet Verse" },
-      { property: "og:title", content: "Trunet Verse" },
+      { name: "author", content: "Bluepeak Wifi" },
+      { property: "og:title", content: "Bluepeak Wifi" },
       {
         property: "og:description",
         content: "Smarter connectivity for every home and business.",
@@ -105,26 +105,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@graph": [
             {
               "@type": "WebSite",
-              "@id": "https://trunetverse.com/#website",
-              url: "https://trunetverse.com",
-              name: "Trunet Verse",
+              "@id": "https://bluepeakwifi.com/#website",
+              url: "https://bluepeakwifi.com",
+              name: "Bluepeak Wifi",
               description:
                 "Independent broadband and cable TV connection assistance for homes and businesses.",
-              publisher: { "@id": "https://trunetverse.com/#organization" },
+              publisher: { "@id": "https://bluepeakwifi.com/#organization" },
             },
             {
               "@type": ["Organization", "LocalBusiness"],
-              "@id": "https://trunetverse.com/#organization",
-              name: "Trunet Verse",
-              url: "https://trunetverse.com",
+              "@id": "https://bluepeakwifi.com/#organization",
+              name: "Bluepeak Wifi",
+              url: "https://bluepeakwifi.com",
               description:
-                "Trunet Verse is an independent third-party service that compares available broadband and cable networks at your address and arranges installation.",
-              telephone: "xxx-xxx-xxxx",
+                "Bluepeak Wifi is an independent third-party service that compares available broadband and cable networks at your address and arranges installation.",
+              telephone: "+1-877-579-4692",
               areaServed: "US",
               contactPoint: [
                 {
                   "@type": "ContactPoint",
-                  telephone: "xxx-xxx-xxxx",
+                  telephone: "+1-877-579-4692",
                   contactType: "customer service",
                   availableLanguage: "English",
                 },
