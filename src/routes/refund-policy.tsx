@@ -37,10 +37,26 @@ function RefundPage() {
           you select. Refunds for those amounts are governed solely by that provider's policy and
           must be requested from them directly.
         </p>
+        <h2>Cancellations</h2>
+        <p>
+          You may cancel a request or any agreed assistance service at any time before the work
+          begins by calling us at (877) 579-4692. Cancelling a request to a provider after it has
+          been submitted is subject to that provider's own terms.
+        </p>
+        <h2>Exchanges</h2>
+        <p>
+          We do not sell physical goods, so exchanges do not apply. Equipment supplied by a
+          provider is exchanged or returned under that provider's warranty and return policy.
+        </p>
         <h2>How to request a refund</h2>
         <p>
-          Contact us with your request reference. Approved refunds are issued to the original
-          payment method within 5–10 business days.
+          Call us at (877) 579-4692 with your request reference. Approved refunds are issued to the
+          original payment method within 5–10 business days.
+        </p>
+        <h2>Business information</h2>
+        <p>
+          Bluepeak Wifi, 5908 Cecil Dr, Ozawkie, KS 66070, United States. Phone: (877) 579-4692.
+          Website: bluepeakwifi.com.
         </p>
       </Prose>
     </>

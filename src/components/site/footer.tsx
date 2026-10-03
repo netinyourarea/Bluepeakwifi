@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, ArrowUpRight } from "lucide-react";
+import { Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { Logo } from "./header";
 import { NetworkPattern } from "./primitives";
 
@@ -44,6 +44,12 @@ export function Footer() {
                 <li className="flex items-start gap-3">
                   <Phone className="mt-0.5 size-4 shrink-0 text-aqua" />
                   <a href="tel:+18775794692" className="hover:text-aqua">(877) 579-4692</a>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MapPin className="mt-0.5 size-4 shrink-0 text-aqua" />
+                  <address className="not-italic">
+                    5908 Cecil Dr, Ozawkie, KS 66070, United States
+                  </address>
                 </li>
               </ul>
             </div>

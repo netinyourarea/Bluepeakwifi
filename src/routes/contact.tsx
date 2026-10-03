@@ -1,7 +1,7 @@
 import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
-import { Phone } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { PageHero } from "@/components/site/page-shell";
 import { DisclaimerBlock } from "@/components/site/page-shell";
 import { Reveal, Eyebrow } from "@/components/site/primitives";
@@ -42,6 +42,12 @@ function ContactPage() {
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <Phone className="size-5 shrink-0 text-primary" />
                 <a href="tel:+18775794692" className="min-w-0 truncate text-sm font-bold hover:text-primary">(877) 579-4692</a>
+              </li>
+              <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
+                <MapPin className="size-5 shrink-0 text-primary" />
+                <address className="text-sm font-bold not-italic">
+                  5908 Cecil Dr, Ozawkie, KS 66070, United States
+                </address>
               </li>
             </ul>
             <DisclaimerBlock />
