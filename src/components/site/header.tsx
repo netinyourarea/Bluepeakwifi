@@ -81,8 +81,8 @@ export function Header() {
 
           <div className="flex items-center gap-2">
             <span className="hidden items-center gap-2 px-3 py-2 text-sm font-semibold text-foreground/80 xl:flex">
-              <a href="tel:+18775794692" className="inline-flex items-center gap-2 hover:text-primary">
-                <Phone className="size-4 text-primary" /> (877) 579-4692
+              <a href="tel:+18335815253" className="inline-flex items-center gap-2 hover:text-primary">
+                <Phone className="size-4 text-primary" /> (833) 581-5253
               </a>
             </span>
             <Link

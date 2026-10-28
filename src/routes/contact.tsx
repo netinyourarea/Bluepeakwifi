@@ -41,7 +41,7 @@ function ContactPage() {
             <ul className="space-y-4">
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <Phone className="size-5 shrink-0 text-primary" />
-                <a href="tel:+18775794692" className="min-w-0 truncate text-sm font-bold hover:text-primary">(877) 579-4692</a>
+                <a href="tel:+18335815253" className="min-w-0 truncate text-sm font-bold hover:text-primary">(833) 581-5253</a>
               </li>
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <MapPin className="size-5 shrink-0 text-primary" />
