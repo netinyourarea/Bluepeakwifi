@@ -17,13 +17,13 @@ function RefundPage() {
       <PageHero
         eyebrow="Refund Policy"
         title="Cancellations and refunds"
-        intro="Coverage checks and connection guidance are free. Where a paid assistance fee applies, these terms govern refunds."
+        intro="Our troubleshooting guides and basic guidance are free. Where a paid assistance fee applies, these terms govern refunds."
       />
       <Prose>
         <DisclaimerBlock />
         <h2>Free services</h2>
         <p>
-          Coverage checks, option comparisons and standard connection request assistance are
+          The guides on this website and standard guidance on internet, Wi-Fi and outage issues are
           provided at no cost, so no refund is applicable.
         </p>
         <h2>Paid assistance fees</h2>
@@ -33,15 +33,15 @@ function RefundPage() {
         </p>
         <h2>Provider charges</h2>
         <p>
-          Installation charges, equipment costs and subscription fees are billed by the provider
-          you select. Refunds for those amounts are governed solely by that provider's policy and
+          Installation charges, equipment costs, subscription fees and outage credits are billed or
+          issued by your internet provider. Refunds for those amounts are governed solely by that provider's policy and
           must be requested from them directly.
         </p>
         <h2>Cancellations</h2>
         <p>
           You may cancel a request or any agreed assistance service at any time before the work
-          begins by calling us at (833) 581-5253. Cancelling a request to a provider after it has
-          been submitted is subject to that provider's own terms.
+          begins by calling us at (833) 581-5253. Anything you have arranged directly with your
+          provider is subject to that provider's own terms.
         </p>
         <h2>Exchanges</h2>
         <p>

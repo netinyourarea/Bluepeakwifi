@@ -5,11 +5,12 @@ import { NetworkPattern } from "./primitives";
 
 const COLUMNS: { title: string; links: { label: string; to: string }[] }[] = [
   {
-    title: "Services",
+    title: "Support",
     links: [
       { label: "Home", to: "/" },
-      { label: "Internet Plans", to: "/internet" },
-      { label: "Cable TV", to: "/cable-tv" },
+      { label: "Internet Support", to: "/internet" },
+      { label: "Wi-Fi Help", to: "/wifi" },
+      { label: "Outages", to: "/outages" },
       { label: "Contact", to: "/contact" },
     ],
   },
@@ -25,7 +26,7 @@ const COLUMNS: { title: string; links: { label: string; to: string }[] }[] = [
 ];
 
 export const DISCLAIMER_TEXT =
-  "Bluepeak Wifi operates as an independent third-party service provider offering assistance with broadband and cable connection requests. We are not affiliated with, endorsed by, or representing any internet service provider, cable operator, or telecommunications company. All brand names, logos and trademarks referenced remain the property of their respective owners.";
+  "Bluepeak Wifi operates as an independent third-party service offering information and assistance with internet, Wi-Fi and connection troubleshooting. We are not affiliated with, endorsed by, or representing any internet service provider, cable operator, or telecommunications company, and we do not operate any network or repair provider outages. All brand names, logos and trademarks referenced remain the property of their respective owners.";
 
 export function Footer() {
   return (
@@ -37,8 +38,8 @@ export function Footer() {
             <div className="max-w-sm">
               <Logo tone="light" />
               <p className="mt-5 text-sm leading-relaxed text-cream/70">
-                An independent connectivity concierge — we map which broadband and cable services
-                actually reach your address, then handle the paperwork and installation booking.
+                Independent help for internet, Wi-Fi and outage problems — clear steps to get your
+                connection working again.
               </p>
               <ul className="mt-6 space-y-3 text-sm text-cream/75">
                 <li className="flex items-start gap-3">
@@ -83,7 +84,7 @@ export function Footer() {
 
           <div className="mt-8 flex flex-col gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} Bluepeak Wifi. All rights reserved.</p>
-            <p>Independent third-party connection assistance service.</p>
+            <p>Independent third-party internet &amp; Wi-Fi help service.</p>
           </div>
         </div>
       </div>

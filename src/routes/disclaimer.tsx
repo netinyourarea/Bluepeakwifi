@@ -4,7 +4,7 @@ import { PageHero, Prose, DisclaimerBlock } from "@/components/site/page-shell";
 
 const title = "Disclaimer | Bluepeak Wifi";
 const description =
-  "Bluepeak Wifi is an independent third-party service assisting with broadband and cable connection requests.";
+  "Bluepeak Wifi is an independent third-party service offering help with internet, Wi-Fi and connection troubleshooting.";
 
 export const Route = createFileRoute("/disclaimer")({
   head: () => pageHead({ title, description, path: "/disclaimer", breadcrumb: [{ name: "Disclaimer", path: "/disclaimer" }] }),
@@ -17,7 +17,7 @@ function DisclaimerPage() {
       <PageHero
         eyebrow="Disclaimer"
         title="Independent third-party service"
-        intro="Important information about our relationship with internet service providers and cable operators."
+        intro="Important information about our relationship with internet service providers and telecommunications companies."
       />
       <Prose>
         <DisclaimerBlock />
@@ -29,13 +29,14 @@ function DisclaimerPage() {
         </p>
         <h2>Information accuracy</h2>
         <p>
-          Coverage, speed, channel and timeline information is indicative and subject to
-          confirmation by the relevant provider at the time of installation.
+          Troubleshooting steps and outage guidance are general and may not apply to every router,
+          modem or provider. Always follow your equipment maker's and provider's instructions.
         </p>
         <h2>No service guarantee</h2>
         <p>
-          We do not guarantee availability, performance, pricing or installation outcomes, as these
-          are determined entirely by the provider delivering the service.
+          We do not operate any network, cannot see your provider's network status and cannot
+          repair provider outages. We do not guarantee that any step will resolve a given problem;
+          service availability, performance and restoration are determined by your provider.
         </p>
       </Prose>
     </>

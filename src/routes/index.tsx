@@ -1,24 +1,20 @@
 import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Bundle,
-  CoverageMap,
   Equipment,
   Faq,
   FinalCta,
   Hero,
-  InternetPlans,
+  OutageCheck,
   Steps,
   Support,
-  Testimonials,
   Ticker,
-  TvPackages,
   WhyUs,
 } from "@/components/site/home-sections";
 
-const title = "Bluepeak Wifi — Fiber Internet & Cable TV Plans";
+const title = "Bluepeak Wifi — Internet, Wi-Fi & Outage Help";
 const description =
-  "Compare fiber internet speeds and cable TV channel packs available at your address, then let a specialist handle the order and installation.";
+  "Independent help for internet that's down or slow, Wi-Fi dead zones, router setup and suspected outages. Plain-language, step-by-step support.";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({ title, description, path: "/" }),
@@ -31,14 +27,10 @@ function Index() {
       <Hero />
       <Ticker />
       <WhyUs />
-      <InternetPlans />
       <Steps />
-      <TvPackages />
-      <Bundle />
+      <OutageCheck />
       <Equipment />
-      <CoverageMap />
       <Support />
-      <Testimonials />
       <Faq />
       <FinalCta />
     </>

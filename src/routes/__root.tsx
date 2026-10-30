@@ -72,17 +72,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bluepeak Wifi — Broadband & Cable Connection Assistance" },
+      { title: "Bluepeak Wifi — Internet, Wi-Fi & Outage Help" },
       {
         name: "description",
         content:
-          "Explore broadband and cable connectivity options available in your area and request a connection with expert guidance.",
+          "Independent help for internet that's down or slow, Wi-Fi dead zones, router setup and suspected outages.",
       },
       { name: "author", content: "Bluepeak Wifi" },
       { property: "og:title", content: "Bluepeak Wifi" },
       {
         property: "og:description",
-        content: "Smarter connectivity for every home and business.",
+        content: "Step-by-step help for internet, Wi-Fi and outage problems.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -109,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               url: "https://bluepeakwifi.com",
               name: "Bluepeak Wifi",
               description:
-                "Independent broadband and cable TV connection assistance for homes and businesses.",
+                "Independent internet, Wi-Fi and outage troubleshooting help for homes and small businesses.",
               publisher: { "@id": "https://bluepeakwifi.com/#organization" },
             },
             {
@@ -118,7 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               name: "Bluepeak Wifi",
               url: "https://bluepeakwifi.com",
               description:
-                "Bluepeak Wifi is an independent third-party service that compares available broadband and cable networks at your address and arranges installation.",
+                "Bluepeak Wifi is an independent third-party service that helps people troubleshoot internet, Wi-Fi and suspected outage problems. Not affiliated with any internet service provider.",
               telephone: "+1-833-581-5253",
               areaServed: "US",
               contactPoint: [

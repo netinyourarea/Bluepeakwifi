@@ -5,8 +5,9 @@ import { cn } from "@/lib/utils";
 
 export const NAV = [
   { label: "Home", to: "/" },
-  { label: "Internet", to: "/internet" },
-  { label: "Cable TV", to: "/cable-tv" },
+  { label: "Internet Support", to: "/internet" },
+  { label: "Wi-Fi Help", to: "/wifi" },
+  { label: "Outages", to: "/outages" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
@@ -85,13 +86,13 @@ export function Header() {
                 <Phone className="size-4 text-primary" /> (833) 581-5253
               </a>
             </span>
-            <Link
-              to="/contact"
+            <a
+              href="tel:+18335815253"
               className="group hidden items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-primary sm:inline-flex"
             >
-              Check my address
+              Get help now
               <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </Link>
+            </a>
             <button
               type="button"
               aria-label="Toggle navigation"
@@ -118,13 +119,13 @@ export function Header() {
                 </Link>
               ))}
             </nav>
-            <Link
-              to="/contact"
+            <a
+              href="tel:+18335815253"
               onClick={() => setOpen(false)}
               className="mt-2 block rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream"
             >
-              Check my address
-            </Link>
+              Get help now
+            </a>
           </div>
         )}
       </header>

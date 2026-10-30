@@ -7,9 +7,9 @@ import { DisclaimerBlock } from "@/components/site/page-shell";
 import { Reveal, Eyebrow } from "@/components/site/primitives";
 import { IMG } from "@/lib/images";
 
-const title = "Contact Our Connectivity Specialists | Bluepeak Wifi";
+const title = "Contact Us for Internet & Wi-Fi Help | Bluepeak Wifi";
 const description =
-  "Talk to an independent connectivity specialist about broadband and cable connection requests in your area.";
+  "Describe your internet, Wi-Fi or suspected outage problem and get step-by-step help from an independent support team.";
 
 export const Route = createFileRoute("/contact")({
   head: () => pageHead({ title, description, path: "/contact", breadcrumb: [{ name: "Contact", path: "/contact" }] }),
@@ -29,8 +29,8 @@ function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Talk to a specialist"
-        intro="Tell us where you are and how you use the internet. We'll come back with the options that genuinely reach your address."
+        title="Tell us what's going wrong"
+        intro="Describe the problem — no internet, slow Wi-Fi, a suspected outage or a new router — and we'll get back to you with clear next steps."
         image={IMG.installer}
       />
 
@@ -54,12 +54,12 @@ function ContactPage() {
           </Reveal>
 
           <Reveal delay={100} className="rounded-3xl border border-border bg-card p-7 sm:p-10">
-            <h2 className="text-2xl font-extrabold">Request a callback</h2>
+            <h2 className="text-2xl font-extrabold">Request help</h2>
             <form onSubmit={onSubmit} className="mt-6 grid gap-4">
               {[
                 { name: "name", label: "Full name", type: "text" },
                 { name: "email", label: "Email address", type: "email" },
-                { name: "zip", label: "ZIP code or locality", type: "text" },
+                { name: "zip", label: "ZIP code", type: "text" },
               ].map((f) => (
                 <label key={f.name} className="block">
                   <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
@@ -75,7 +75,23 @@ function ContactPage() {
               ))}
               <label className="block">
                 <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
-                  How will you use the connection?
+                  What do you need help with?
+                </span>
+                <select
+                  name="issue"
+                  className="mt-2 h-12 w-full rounded-xl border border-input bg-background px-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/12"
+                >
+                  <option>No internet</option>
+                  <option>Slow speeds</option>
+                  <option>Wi-Fi dead zones</option>
+                  <option>Possible outage</option>
+                  <option>Router / modem setup</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+              <label className="block">
+                <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
+                  Describe the problem
                 </span>
                 <textarea
                   name="message"
@@ -91,7 +107,7 @@ function ContactPage() {
               </button>
               {sent && (
                 <p className="rounded-xl border border-accent/35 bg-accent/10 p-4 text-sm">
-                  Thanks — a specialist will reach out shortly to confirm availability.
+                  Thanks — we'll reach out shortly with next steps.
                 </p>
               )}
             </form>
