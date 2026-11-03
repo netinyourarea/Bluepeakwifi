@@ -9,6 +9,7 @@ import {
 
 import { Header } from "../components/site/header";
 import { Footer } from "../components/site/footer";
+import { StickyCall } from "../components/site/sticky-call";
 
 function NotFoundComponent() {
   return (
@@ -146,13 +147,14 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <HeadContent />
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col pb-20 sm:pb-0">
         <Header />
         <main className="flex-1">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
         <Footer />
+        <StickyCall />
       </div>
     </QueryClientProvider>
   );

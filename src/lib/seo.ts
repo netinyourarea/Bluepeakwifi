@@ -9,6 +9,10 @@ type HeadOptions = {
   ogType?: "website" | "article";
   /** Breadcrumb trail after Home, in order. */
   breadcrumb?: { name: string; path: string }[];
+  /** Visible FAQ content, emitted as FAQPage structured data. */
+  faqs?: { q: string; a: string[] }[];
+  /** Extra JSON-LD objects, e.g. Article. */
+  schemas?: object[];
 };
 
 export function pageHead({
@@ -17,8 +21,27 @@ export function pageHead({
   path,
   ogType = "website",
   breadcrumb = [],
+  faqs = [],
+  schemas = [],
 }: HeadOptions) {
   const url = `${SITE_URL}${path === "/" ? "" : path}`;
+
+  const faqScripts = faqs.length
+    ? [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a.join(" ") },
+            })),
+          }),
+        },
+      ]
+    : [];
 
   const scripts = breadcrumb.length
     ? [
@@ -40,6 +63,10 @@ export function pageHead({
         },
       ]
     : [];
+  scripts.push(...faqScripts);
+  for (const schema of schemas) {
+    scripts.push({ type: "application/ld+json", children: JSON.stringify(schema) });
+  }
 
   return {
     meta: [

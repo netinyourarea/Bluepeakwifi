@@ -21,6 +21,51 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://bluepeakwifi.com/insights</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/internet-service-assistance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/internet-troubleshooting</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/wifi-setup-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/router-setup-help</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/broadband-connection-assistance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/network-connection-support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/internet-plan-guidance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bluepeakwifi.com/insights/cable-tv-services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bluepeakwifi.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

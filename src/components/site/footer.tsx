@@ -3,15 +3,25 @@ import { Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { Logo } from "./header";
 import { NetworkPattern } from "./primitives";
 
-const COLUMNS: { title: string; links: { label: string; to: string }[] }[] = [
+const COLUMNS: { title: string; links: { label: string; to: string; hash?: string }[] }[] = [
   {
-    title: "Support",
+    title: "Navigate",
     links: [
       { label: "Home", to: "/" },
       { label: "Internet Support", to: "/internet" },
       { label: "Wi-Fi Help", to: "/wifi" },
       { label: "Outages", to: "/outages" },
+      { label: "Insights", to: "/insights" },
       { label: "Contact", to: "/contact" },
+    ],
+  },
+  {
+    title: "Popular guides",
+    links: [
+      { label: "Internet not working", to: "/internet", hash: "no-internet" },
+      { label: "Restart vs. factory reset", to: "/internet", hash: "restart-vs-reset" },
+      { label: "Wi-Fi dead zones", to: "/wifi", hash: "signal-weakens" },
+      { label: "How long outages last", to: "/outages", hash: "how-long" },
     ],
   },
   {
@@ -26,7 +36,7 @@ const COLUMNS: { title: string; links: { label: string; to: string }[] }[] = [
 ];
 
 export const DISCLAIMER_TEXT =
-  "Bluepeak Wifi operates as an independent third-party service offering information and assistance with internet, Wi-Fi and connection troubleshooting. We are not affiliated with, endorsed by, or representing any internet service provider, cable operator, or telecommunications company, and we do not operate any network or repair provider outages. All brand names, logos and trademarks referenced remain the property of their respective owners.";
+  "Bluepeak Wifi is an independent third-party assistance resource. It is not an internet service provider or telecommunications carrier and does not own or operate network infrastructure. Internet service availability, network maintenance, outage restoration and service performance are determined by the relevant provider. We are not affiliated with, endorsed by or representing any internet service provider, and any brand names or trademarks referenced remain the property of their respective owners.";
 
 export function Footer() {
   return (
@@ -34,12 +44,13 @@ export function Footer() {
       <div className="tide-bg relative isolate overflow-hidden rounded-[2.5rem] text-cream">
         <NetworkPattern className="text-aqua/40" />
         <div className="relative mx-auto max-w-7xl px-6 pt-14 pb-10 sm:px-10">
-          <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr]">
+          <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
             <div className="max-w-sm">
               <Logo tone="light" />
               <p className="mt-5 text-sm leading-relaxed text-cream/70">
-                Independent help for internet, Wi-Fi and outage problems — clear steps to get your
-                connection working again.
+                An independent third-party resource for understanding internet, Wi-Fi and outage
+                problems, with practical troubleshooting guidance and clear next steps. Not an
+                internet service provider.
               </p>
               <ul className="mt-6 space-y-3 text-sm text-cream/75">
                 <li className="flex items-start gap-3">
@@ -62,9 +73,10 @@ export function Footer() {
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {col.links.map((l) => (
-                    <li key={l.to}>
+                    <li key={l.label}>
                       <Link
                         to={l.to}
+                        hash={l.hash}
                         className="group inline-flex items-center gap-1 text-sm text-cream/70 transition-colors hover:text-cream"
                       >
                         {l.label}
@@ -84,7 +96,7 @@ export function Footer() {
 
           <div className="mt-8 flex flex-col gap-3 border-t border-cream/10 pt-6 text-xs text-cream/50 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} Bluepeak Wifi. All rights reserved.</p>
-            <p>Independent third-party internet &amp; Wi-Fi help service.</p>
+            <p>Independent third-party assistance resource. Not an internet service provider.</p>
           </div>
         </div>
       </div>

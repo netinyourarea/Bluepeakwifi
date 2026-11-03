@@ -8,6 +8,7 @@ export const NAV = [
   { label: "Internet Support", to: "/internet" },
   { label: "Wi-Fi Help", to: "/wifi" },
   { label: "Outages", to: "/outages" },
+  { label: "Insights", to: "/insights" },
   { label: "Contact", to: "/contact" },
 ] as const;
 
@@ -49,6 +50,13 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -66,14 +74,14 @@ export function Header() {
         <div className="flex items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
           <Logo />
 
-          <nav className="hidden items-center gap-1 rounded-full bg-secondary/70 p-1 lg:flex">
+          <nav aria-label="Main" className="hidden items-center gap-1 rounded-full bg-secondary/70 p-1 xl:flex">
             {NAV.map((n) => (
               <Link
                 key={n.to}
                 to={n.to}
                 activeOptions={{ exact: n.to === "/" }}
                 activeProps={{ className: "bg-card text-primary shadow-sm" }}
-                className="rounded-full px-5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                className="rounded-full px-5 py-2 text-sm font-semibold whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground"
               >
                 {n.label}
               </Link>
@@ -81,24 +89,20 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <span className="hidden items-center gap-2 px-3 py-2 text-sm font-semibold text-foreground/80 xl:flex">
-              <a href="tel:+18335815253" className="inline-flex items-center gap-2 hover:text-primary">
-                <Phone className="size-4 text-primary" /> (833) 581-5253
-              </a>
-            </span>
             <a
               href="tel:+18335815253"
-              className="group hidden items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-primary sm:inline-flex"
+              className="group hidden items-center gap-1.5 rounded-full bg-ink px-5 whitespace-nowrap py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-primary sm:inline-flex"
             >
-              Get help now
+              <Phone className="size-4" /> Call (833) 581-5253
               <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <button
               type="button"
               aria-label="Toggle navigation"
               aria-expanded={open}
+              aria-controls="mobile-nav"
               onClick={() => setOpen((v) => !v)}
-              className="grid size-10 shrink-0 place-items-center rounded-full bg-secondary text-primary lg:hidden"
+              className="grid size-10 shrink-0 place-items-center rounded-full bg-secondary text-primary xl:hidden"
             >
               {open ? <X className="size-5" /> : <Menu className="size-5" />}
             </button>
@@ -106,14 +110,16 @@ export function Header() {
         </div>
 
         {open && (
-          <div className="border-t border-border px-4 pt-3 pb-4 lg:hidden">
-            <nav className="grid gap-1">
+          <div id="mobile-nav" className="border-t border-border px-4 pt-3 pb-4 xl:hidden">
+            <nav aria-label="Mobile" className="grid gap-1">
               {NAV.map((n) => (
                 <Link
                   key={n.to}
                   to={n.to}
                   onClick={() => setOpen(false)}
-                  className="rounded-2xl px-4 py-3 text-sm font-semibold hover:bg-secondary hover:text-primary"
+                  activeOptions={{ exact: n.to === "/" }}
+                  activeProps={{ className: "bg-secondary text-primary" }}
+                  className="rounded-2xl px-4 py-3.5 text-base font-semibold hover:bg-secondary hover:text-primary"
                 >
                   {n.label}
                 </Link>
@@ -122,9 +128,9 @@ export function Header() {
             <a
               href="tel:+18335815253"
               onClick={() => setOpen(false)}
-              className="mt-2 block rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-cream"
+              className="mt-2 block rounded-full bg-ink px-4 py-3.5 text-center text-sm font-semibold text-cream"
             >
-              Get help now
+              <Phone className="mr-2 inline size-4" /> Call (833) 581-5253
             </a>
           </div>
         )}

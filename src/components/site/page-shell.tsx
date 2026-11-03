@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Phone } from "lucide-react";
 import { Eyebrow, Reveal, NetworkPattern } from "./primitives";
 import { DISCLAIMER_TEXT } from "./footer";
 
@@ -65,22 +66,19 @@ export function CtaStrip() {
         <Reveal className="tide-bg relative isolate flex flex-col items-center gap-6 overflow-hidden rounded-[2rem] p-10 text-center text-cream sm:p-14">
           <NetworkPattern className="text-aqua/30" />
           <h2 className="relative font-display text-3xl font-extrabold sm:text-4xl">
-            Still offline? Let&apos;s sort it out
+            Problem not fixed? Our team will help.
           </h2>
-          <div className="relative flex flex-col gap-3 sm:flex-row">
-            <a
-              href="tel:+18335815253"
-              className="rounded-full bg-coral px-8 py-3.5 text-sm font-bold text-ink transition-colors hover:bg-aqua"
-            >
-              Get help now
-            </a>
-            <a
-              href="tel:+18335815253"
-              className="rounded-full px-8 py-3.5 text-sm font-bold text-cream ring-1 ring-cream/25 transition-colors hover:bg-cream/10"
-            >
-              Call (833) 581-5253
-            </a>
-          </div>
+          <p className="relative max-w-xl text-sm leading-relaxed text-cream/80">
+            If the steps above haven&apos;t solved it, call us. We&apos;ll talk it through and help
+            you understand the next steps. We can&apos;t repair provider networks or guarantee an
+            outcome.
+          </p>
+          <a
+            href="tel:+18335815253"
+            className="relative inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-aqua"
+          >
+            <Phone className="size-5" /> Call (833) 581-5253
+          </a>
         </Reveal>
       </div>
     </section>

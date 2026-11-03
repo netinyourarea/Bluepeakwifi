@@ -1,15 +1,14 @@
 import { pageHead } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
 import { Phone, MapPin } from "lucide-react";
 import { PageHero } from "@/components/site/page-shell";
 import { DisclaimerBlock } from "@/components/site/page-shell";
 import { Reveal, Eyebrow } from "@/components/site/primitives";
 import { IMG } from "@/lib/images";
 
-const title = "Contact Us for Internet & Wi-Fi Help | Bluepeak Wifi";
+const title = "Contact Bluepeak Wifi | Internet & Wi-Fi Questions";
 const description =
-  "Describe your internet, Wi-Fi or suspected outage problem and get step-by-step help from an independent support team.";
+  "Have questions about your internet, home Wi-Fi or a possible service interruption? Tell us what you're experiencing and explore the next steps with an independent assistance team.";
 
 export const Route = createFileRoute("/contact")({
   head: () => pageHead({ title, description, path: "/contact", breadcrumb: [{ name: "Contact", path: "/contact" }] }),
@@ -17,20 +16,12 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [sent, setSent] = useState(false);
-
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSent(true);
-    e.currentTarget.reset();
-  }
-
   return (
     <>
       <PageHero
         eyebrow="Contact"
-        title="Tell us what's going wrong"
-        intro="Describe the problem — no internet, slow Wi-Fi, a suspected outage or a new router — and we'll get back to you with clear next steps."
+        title="Let's talk about your connection."
+        intro="Have questions about your internet, home Wi-Fi or a possible service interruption? Tell us what you're experiencing and explore the next steps."
         image={IMG.installer}
       />
 
@@ -50,67 +41,40 @@ function ContactPage() {
                 </address>
               </li>
             </ul>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              For account, billing or confirmed outage questions, you will need to contact your
+              actual internet provider. We can help you understand the problem and prepare what to
+              tell them.
+            </p>
             <DisclaimerBlock />
           </Reveal>
 
           <Reveal delay={100} className="rounded-3xl border border-border bg-card p-7 sm:p-10">
-            <h2 className="text-2xl font-extrabold">Request help</h2>
-            <form onSubmit={onSubmit} className="mt-6 grid gap-4">
+            <h2 className="text-2xl font-extrabold">Call us to get help</h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              The quickest way to reach us is by phone. Tell us what you are experiencing, such as
+              no internet, slow Wi-Fi or a suspected outage, and we will help you understand the
+              issue and explore the next steps.
+            </p>
+            <a
+              href="tel:+18335815253"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-aqua sm:w-auto"
+            >
+              <Phone className="size-5" /> Call (833) 581-5253
+            </a>
+            <h3 className="mt-8 text-sm font-bold">Have these ready when you call</h3>
+            <ul className="mt-3 space-y-2 text-sm text-foreground/80">
               {[
-                { name: "name", label: "Full name", type: "text" },
-                { name: "email", label: "Email address", type: "email" },
-                { name: "zip", label: "ZIP code", type: "text" },
-              ].map((f) => (
-                <label key={f.name} className="block">
-                  <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
-                    {f.label}
-                  </span>
-                  <input
-                    required
-                    name={f.name}
-                    type={f.type}
-                    className="mt-2 h-12 w-full rounded-xl border border-input bg-background px-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/12"
-                  />
-                </label>
+                "What is happening and when it started",
+                "Whether one device or all devices are affected",
+                "The router and modem light colors",
+                "What you have already tried",
+              ].map((t) => (
+                <li key={t} className="flex items-start gap-2.5">
+                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-aqua" /> {t}
+                </li>
               ))}
-              <label className="block">
-                <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
-                  What do you need help with?
-                </span>
-                <select
-                  name="issue"
-                  className="mt-2 h-12 w-full rounded-xl border border-input bg-background px-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/12"
-                >
-                  <option>No internet</option>
-                  <option>Slow speeds</option>
-                  <option>Wi-Fi dead zones</option>
-                  <option>Possible outage</option>
-                  <option>Router / modem setup</option>
-                  <option>Something else</option>
-                </select>
-              </label>
-              <label className="block">
-                <span className="text-xs font-bold tracking-wide text-muted-foreground uppercase">
-                  Describe the problem
-                </span>
-                <textarea
-                  name="message"
-                  rows={4}
-                  className="mt-2 w-full rounded-xl border border-input bg-background p-4 text-sm outline-none focus:border-primary focus:ring-4 focus:ring-primary/12"
-                />
-              </label>
-              <button
-                type="submit"
-                className="mt-2 rounded-xl bg-primary px-7 py-3.5 text-sm font-bold text-primary-foreground"
-              >
-                Send Request
-              </button>
-              {sent && (
-                <p className="rounded-xl border border-accent/35 bg-accent/10 p-4 text-sm">
-                  Thanks — we'll reach out shortly with next steps.
-                </p>
-              )}
-            </form>
+            </ul>
           </Reveal>
         </div>
       </section>
