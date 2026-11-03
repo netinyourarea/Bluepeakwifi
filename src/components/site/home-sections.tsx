@@ -209,8 +209,8 @@ export const ISSUE_CARDS = [
     icon: AlertTriangle,
     title: "Suspected outages",
     copy: "If only one device struggles, the issue is probably at home. If every device is offline and your equipment looks normal, the wider service may be affected. Your provider's official channels can confirm.",
-    to: "/outages",
-    hash: "what-is-outage",
+    to: "/internet",
+    hash: "outages",
     cta: "Home issue or outage?",
   },
   {
@@ -414,7 +414,7 @@ export function OutageCheck() {
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
-                  to="/outages"
+                  to="/internet" hash="outages"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-3.5 text-sm font-bold text-cream transition-colors hover:bg-primary"
                 >
                   Read the outage guide

@@ -251,7 +251,7 @@ function ArticlePage() {
               <ul className="mt-3 space-y-2">
                 <li><Link to="/internet" className="text-foreground/75 hover:text-primary">Internet Support</Link></li>
                 <li><Link to="/wifi" className="text-foreground/75 hover:text-primary">Wi-Fi Help</Link></li>
-                <li><Link to="/outages" className="text-foreground/75 hover:text-primary">Outages</Link></li>
+                <li><Link to="/internet" hash="outages" className="text-foreground/75 hover:text-primary">Outages</Link></li>
               </ul>
             </div>
           </aside>

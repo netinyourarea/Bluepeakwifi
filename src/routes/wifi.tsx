@@ -312,7 +312,7 @@ function WifiPage() {
             <RelatedLinks
               links={[
                 { to: "/internet", label: "Internet troubleshooting" },
-                { to: "/outages", label: "Outage guide" },
+                { to: "/internet", label: "Outage guide", hash: "outages" },
                 { to: "/contact", label: "Contact us" },
               ]}
             />

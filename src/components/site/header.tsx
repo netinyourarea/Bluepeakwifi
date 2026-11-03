@@ -5,10 +5,8 @@ import { cn } from "@/lib/utils";
 
 export const NAV = [
   { label: "Home", to: "/" },
-  { label: "Internet Support", to: "/internet" },
+  { label: "Internet & Outages", to: "/internet" },
   { label: "Wi-Fi Help", to: "/wifi" },
-  { label: "Outages", to: "/outages" },
-  { label: "Insights", to: "/insights" },
   { label: "Contact", to: "/contact" },
 ] as const;
 

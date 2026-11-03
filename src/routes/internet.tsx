@@ -12,6 +12,8 @@ import {
   type Topic,
 } from "@/components/site/guide";
 import { IMG } from "@/lib/images";
+import { OutageSections } from "@/components/site/outage-sections";
+import { OUTAGE_FAQS } from "@/lib/faqs";
 
 const title = "Internet Not Working? Troubleshooting & Speed Guide | Bluepeak Wifi";
 const description =
@@ -24,6 +26,7 @@ export const Route = createFileRoute("/internet")({
       description,
       path: "/internet",
       breadcrumb: [{ name: "Internet Support", path: "/internet" }],
+      faqs: OUTAGE_FAQS,
     }),
   component: InternetPage,
 });
@@ -415,7 +418,6 @@ function InternetPage() {
             <div className="mt-6">
               <RelatedLinks
                 links={[
-                  { to: "/outages", label: "Outage guide" },
                   { to: "/wifi", label: "Wi-Fi help" },
                 ]}
               />
@@ -423,6 +425,8 @@ function InternetPage() {
           </Reveal>
         </div>
       </section>
+
+      <OutageSections />
 
       <CtaStrip />
     </>

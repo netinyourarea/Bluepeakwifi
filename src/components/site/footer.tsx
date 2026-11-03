@@ -10,7 +10,6 @@ const COLUMNS: { title: string; links: { label: string; to: string; hash?: strin
       { label: "Home", to: "/" },
       { label: "Internet Support", to: "/internet" },
       { label: "Wi-Fi Help", to: "/wifi" },
-      { label: "Outages", to: "/outages" },
       { label: "Insights", to: "/insights" },
       { label: "Contact", to: "/contact" },
     ],
@@ -21,7 +20,7 @@ const COLUMNS: { title: string; links: { label: string; to: string; hash?: strin
       { label: "Internet not working", to: "/internet", hash: "no-internet" },
       { label: "Restart vs. factory reset", to: "/internet", hash: "restart-vs-reset" },
       { label: "Wi-Fi dead zones", to: "/wifi", hash: "signal-weakens" },
-      { label: "How long outages last", to: "/outages", hash: "how-long" },
+      { label: "How long outages last", to: "/internet", hash: "how-long" },
     ],
   },
   {
