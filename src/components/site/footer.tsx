@@ -57,6 +57,10 @@ export function Footer() {
                   <a href="tel:+18335815253" className="hover:text-aqua">(833) 581-5253</a>
                 </li>
                 <li className="flex items-start gap-3">
+                  <Phone className="mt-0.5 size-4 shrink-0 text-aqua" />
+                  <a href="tel:+18443972881" className="hover:text-aqua">(844) 397-2881</a>
+                </li>
+                <li className="flex items-start gap-3">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-aqua" />
                   <address className="not-italic">
                     5908 Cecil Dr, Ozawkie, KS 66070, United States

@@ -89,6 +89,12 @@ export function Hero() {
             >
               <Phone className="size-4" /> Call (833) 581-5253
             </a>
+            <a
+              href="tel:+18443972881"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-sm font-bold text-ink transition-colors hover:bg-aqua"
+            >
+              <Phone className="size-4" /> Call (844) 397-2881
+            </a>
             <Link
               to="/internet"
               className="inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-bold text-cream ring-1 ring-cream/30 transition-colors hover:bg-cream/10"
