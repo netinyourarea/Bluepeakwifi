@@ -120,12 +120,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               url: "https://bluepeakwifi.com",
               description:
                 "Bluepeak Wifi is an independent third-party service that helps people troubleshoot internet, Wi-Fi and suspected outage problems. Not affiliated with any internet service provider.",
-              telephone: "+1-833-581-5253",
+              telephone: "+1-844-397-2881",
               areaServed: "US",
               contactPoint: [
                 {
                   "@type": "ContactPoint",
-                  telephone: "+1-833-581-5253",
+                  telephone: "+1-844-397-2881",
                   contactType: "customer service",
                   availableLanguage: "English",
                 },

@@ -216,10 +216,10 @@ function ArticlePage() {
                 explore the next steps. We cannot repair provider networks or guarantee an outcome.
               </p>
               <a
-                href="tel:+18335815253"
+                href="tel:+18443972881"
                 className="mt-5 inline-flex items-center gap-2 rounded-full bg-coral px-7 py-3.5 text-sm font-bold text-ink transition-colors hover:bg-aqua"
               >
-                <Phone className="size-4" /> Call (833) 581-5253
+                <Phone className="size-4" /> Call (844) 397-2881
               </a>
             </section>
           </div>

@@ -26,7 +26,7 @@ import { HOME_FAQS } from "@/lib/faqs";
 import { IMG } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
-const PHONE_HREF = "tel:+18335815253";
+const PHONE_HREF = "tel:+18443972881";
 
 /* ---------------------------------------------------------------- HERO */
 
@@ -83,12 +83,6 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={220} className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href={PHONE_HREF}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-sm font-bold text-ink transition-colors hover:bg-aqua"
-            >
-              <Phone className="size-4" /> Call (833) 581-5253
-            </a>
             <a
               href="tel:+18443972881"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-sm font-bold text-ink transition-colors hover:bg-aqua"
@@ -430,7 +424,7 @@ export function OutageCheck() {
                   href={PHONE_HREF}
                   className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-ink ring-1 ring-ink/25 transition-colors hover:bg-card"
                 >
-                  <Phone className="size-4" /> Call (833) 581-5253
+                  <Phone className="size-4" /> Call (844) 397-2881
                 </a>
               </div>
             </div>
@@ -637,7 +631,7 @@ export function Faq() {
               href={PHONE_HREF}
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-bold text-cream transition-colors hover:bg-primary"
             >
-              <Phone className="size-4" /> Call (833) 581-5253
+              <Phone className="size-4" /> Call (844) 397-2881
               <ArrowUpRight className="size-4" />
             </a>
           </Reveal>
@@ -685,7 +679,7 @@ export function FinalCta() {
               href={PHONE_HREF}
               className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-aqua"
             >
-              <Phone className="size-5" /> Call (833) 581-5253
+              <Phone className="size-5" /> Call (844) 397-2881
             </a>
           </div>
           <p className="mx-auto mt-6 max-w-md text-xs text-cream/60">

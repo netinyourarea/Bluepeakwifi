@@ -74,10 +74,10 @@ export function CtaStrip() {
             outcome.
           </p>
           <a
-            href="tel:+18335815253"
+            href="tel:+18443972881"
             className="relative inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-aqua"
           >
-            <Phone className="size-5" /> Call (833) 581-5253
+            <Phone className="size-5" /> Call (844) 397-2881
           </a>
         </Reveal>
       </div>
