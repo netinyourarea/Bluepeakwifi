@@ -88,10 +88,10 @@ export function Header() {
 
           <div className="flex items-center gap-2">
             <a
-              href="tel:+18443972881"
+              href="tel:+18338781723"
               className="group hidden items-center gap-1.5 rounded-full bg-ink px-5 whitespace-nowrap py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-primary sm:inline-flex"
             >
-              <Phone className="size-4" /> Call (844) 397-2881
+              <Phone className="size-4" /> Call (833) 878-1723
               <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <button
@@ -124,11 +124,11 @@ export function Header() {
               ))}
             </nav>
             <a
-              href="tel:+18443972881"
+              href="tel:+18338781723"
               onClick={() => setOpen(false)}
               className="mt-2 block rounded-full bg-ink px-4 py-3.5 text-center text-sm font-semibold text-cream"
             >
-              <Phone className="mr-2 inline size-4" /> Call (844) 397-2881
+              <Phone className="mr-2 inline size-4" /> Call (833) 878-1723
             </a>
           </div>
         )}

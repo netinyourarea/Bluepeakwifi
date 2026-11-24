@@ -32,7 +32,7 @@ function ContactPage() {
             <ul className="space-y-4">
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <Phone className="size-5 shrink-0 text-primary" />
-                <a href="tel:+18443972881" className="min-w-0 truncate text-sm font-bold hover:text-primary">(844) 397-2881</a>
+                <a href="tel:+18338781723" className="min-w-0 truncate text-sm font-bold hover:text-primary">(833) 878-1723</a>
               </li>
               <li className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5">
                 <MapPin className="size-5 shrink-0 text-primary" />
@@ -57,10 +57,10 @@ function ContactPage() {
               issue and explore the next steps.
             </p>
             <a
-              href="tel:+18443972881"
+              href="tel:+18338781723"
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-bold text-ink transition-colors hover:bg-aqua sm:w-auto"
             >
-              <Phone className="size-5" /> Call (844) 397-2881
+              <Phone className="size-5" /> Call (833) 878-1723
             </a>
             <h3 className="mt-8 text-sm font-bold">Have these ready when you call</h3>
             <ul className="mt-3 space-y-2 text-sm text-foreground/80">
